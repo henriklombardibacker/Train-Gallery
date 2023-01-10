@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Julius+Sans+One&family=Open+Sans:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="scmaglev.ico" />
+    <title>Trains</title>
+</head>
+
+<body>
+      <video autoplay playsinline muted loop id="splashVideo">
+        <source src="video/Home_page_splash_page_video.mp4" type="video/mp4" repeat>
+      </video>
+      <div class="navbar">
+        <a href="/index.html" id="homebnavbar"><img src="/scmaglev.ico" alt="Home" id="homeicon"></a>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">&#8801; <!-- "&#8801;" dette er en dropdown meny icon du kan utforske. -->
+            </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="/index.html" id="homeDropdown">Home</a>
+                <a href="/about/index.html" id="aboutDropdown">About</a>
+                <div id="galleries" class="dItem" href="#"><a>Galleries</a>
+                  <!--             Inside Dropdown -->
+                     <div class="dropdown-two">
+                      <div class="dItem" id="file" href="#">Import</div>
+                     </div>
+                </div>
+                <a href="/HighSpeedRail/index.html" id="train_types">High Speed Rail</a>
+                <a href="/FreightTrains/index.html" id="train_types">Freight Trains</a>
+                <a href="/NewTechTrains/index.html" id="train_types">New Tech Trains</a>
+              </div>
+          </div> 
+    </div>
+    <br>
+    <br> 
+    <div class="text-content">
+      <br>
+      <h1 id="title">Welcome to the Train gallery</h1>
+      <br>
+      <p id="generaltext">This is a gallery about trains. It can be everything from train types to specific trains. All neatly separated into 3 parts.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

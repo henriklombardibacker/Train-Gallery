@@ -1,0 +1,349 @@
+.navbar {
+  overflow: hidden;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.499); 
+}
+
+.navbar a {
+  height: max-content;
+  font-size: 100px;
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 85px 40px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+#homebnavbar {
+  color: #004B87  ;
+  height: 150pt;
+}
+
+#aboutnavbar {
+  font-size: 0px;
+  visibility: hidden;
+}  
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 200px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 40px 40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  z-index: 1;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: rgb(225, 225, 225);
+}
+
+.dropdown-content {
+  display: none;
+  right: 0;
+  position: absolute;
+  background-color: rgb(225, 225, 225);
+  min-width: 100%;
+  box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10pt 0pt 10pt 10pt;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  font-size: 60px;
+  font-weight: light;
+    color: black;
+  padding: 100px 50px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}  
+
+.dropdown-content a:hover {
+  background-color: rgb(196, 196, 196);
+  z-index: 5;
+}  
+
+.dropdown:hover .dropbtn, .dropbtn:focus, #link1:hover > .dropdown-two {
+  display: block;
+}
+  
+
+.show {
+  display:block;
+}  
+
+  #homeDropdown{
+    color: #004B87  ;
+    border-style:dotted;
+    border-width: 5pt;
+    border-radius: 10pt;
+  }
+
+  #aboutDropdown {
+    visibility: visible;
+  }  
+
+  .line-1 {
+    z-index: 1;
+    color:rgb(0, 0, 0);
+  }  
+
+
+.textbox {
+  font-family:sans-serif;
+}  
+
+  #splashVideo{
+    position:absolute;
+    top:25%;
+    min-width: 100%;
+    max-height:25%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+    .line-1 {
+    z-index: 1;
+    color:rgb(0, 0, 0);
+  }
+
+  .text-content {
+    top: 60%;
+    font-family:sans-serif;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0pt;
+    left: 20pt;
+  }
+
+  #title {
+    font-size: 70pt;
+    margin-top:unset;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+    margin-left: 10pt;
+  }
+
+  #generaltext {
+    font-size: 50pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;}
+
+
+
+@media (min-width: 1080px) {
+  .navbar a {
+    height: max-content;
+    font-size: 30px;
+    float: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    z-index: 1;
+  } 
+
+  #homebnavbar {
+    height: fit-content;
+  }
+
+  #homeicon {
+    height: 40pt;
+  }
+
+  #aboutnavbar {
+    font-size: 30px;
+    padding: 20px 30px;
+    height: 30pt;
+    visibility: visible;
+  }  
+
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 40px;  
+    font-stretch:ultra-expanded;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .dropdown-content {
+    min-width: 400px;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    float: none;
+    font-size: 20px;
+      color: black;
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }  
+
+  .dropdown-content a:hover {
+    background-color: rgb(196, 196, 196);
+    z-index: 5;
+  }  
+
+  .generaltext {
+    font-weight: lighter;
+    font-size: 1vw;
+    margin-left: 2rem;
+    margin-right: 0;
+    width: 70%;
+  }
+
+  #homeDropdown {
+    border-width: 0pt;
+  }
+
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;}
+
+    #splashVideo{
+      display: block;
+      position:absolute;
+      top:0;
+      left:0;
+      min-width:100%; 
+      max-height:100%;
+      object-fit: cover;
+      z-index: -1;
+  }
+
+  .line-1 {
+    z-index: 1;
+    color:rgb(0, 0, 0);
+  }
+
+  .text-content {
+    font-family:sans-serif;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.344);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0pt;
+    left: 20pt;
+  }
+
+  #title {
+    font-size: 20pt;
+    margin-top:unset;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+    margin-left: 10pt;
+  }
+
+  #generaltext {
+    font-size: 10pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+}
+
+  
+  
+  /* Dropdown Button */
+
+  /*
+.dropbtn {
+  background-color:rgba(250, 235, 215, 0);
+  color:aliceblue;
+  padding: 2px;
+  font-size: 405px;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 0 0 7px #000000, 0 0 14px #666666;
+  border-radius: 10pt;
+  border: none;
+  cursor: pointer;
+  margin-top: -333pt;
+}
+
+/* Dropdown button on hover & focus */
+/*.dropbtn:hover, .dropbtn:focus {
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}*/
+
+/* The container <div> - needed to position the dropdown content */
+/*.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/*.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f1f1;
+  min-width: 950px;
+  box-shadow: 0px 10px 18px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+  right:0;
+  font-size: 74pt;
+  border-radius: 10% 0% 10% 10%;
+  margin-top: -166pt;
+}
+
+/* Links inside the dropdown */
+/*.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  color:aliceblue;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 0 0 7px #b1b1b1, 0 0 14px #000000;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/*.show {display:block;}
+
+#page {
+  color: rgb(198, 211, 176);
+}*/
+  

@@ -1,0 +1,331 @@
+.navbar {
+  overflow: hidden;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: #004B87  ;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  z-index: 1;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: rgb(225, 225, 225);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(225, 225, 225);
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 0pt 10pt 10pt 0pt;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  font-size: 20px;
+  color: black;
+  padding: 30px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(196, 196, 196);
+  z-index: 5;
+}
+
+.show {
+  display:block;
+}
+
+  #hsrindicator {
+    color: #004B87  ;
+  }
+
+.line-1 {
+  z-index: 1;
+  color:rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.backtomainpage {
+  display: flex;
+  align-items: left;
+  justify-content: left
+}
+
+#backtotraintype {
+  height: 50pt;
+  width: 50pt;
+  flex-basis: 40%;
+  cursor: pointer;
+}
+
+
+#mainpage {
+  border-style: none;
+  background-color: #ffffff;
+  height: 60pt;
+  width: 140pt;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+  margin: 4px 2px;
+  margin-left: -30pt;
+  cursor: pointer;
+}
+
+.contentWrap {
+  border-radius: 5px;
+  width: 80%;
+  max-width: 80%;
+  padding-top: 1.7rem;
+  display: block;
+  margin-top: 36%;
+  height: 100vh;
+  -ms-transform: translateY(5%);
+  transform: translateY(5%);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  left: 10%;
+  right: 10%;
+  z-index: 1;
+}
+
+/* 
+* make the menu scroll left and right 
+* If content overflows the container
+*/
+.menuWrap {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* 
+* allow menu items to alter their dimensions  
+* to fill available space
+*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+* styles for individual menu items
+*/
+.menu-item {
+  /* spacing styles */
+  -ms-flex-preferred-size: 300px;
+  flex-basis: 300px; /* sets the initial main size of a each menu item */ 
+  -ms-flex-negative: 0; 
+  flex-shrink: 0; /* don't allow menu item to shrink below 120px when there isn’t enough space on the row. */
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; /* allow items to grow up to 150px wide if the container is big enough */
+  display: inline-block;
+  max-width:fit-content; /* limit width */
+  word-break:break-all;
+  padding-right: 10pt;
+  padding-left: 10pt;
+  max-height: 25px;
+  line-height:3px;
+  font-size: 10pt;
+  margin: 0 2px;
+  transition: 0.5s;
+  cursor: pointer;
+  
+  /* additional styles */
+  border-style: outset;
+  border-radius: 3pt;
+  background: white;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+
+.menu-item a {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 11px 0;
+}
+
+.menu-item:hover, 
+.menu-item:focus {
+  background: #e7eff4;
+  border-style: outset;
+  border-width: 3px;
+}
+
+#thispage {
+  color: #004B87;
+}
+
+.arrow {
+  color: #bfd7ec;
+  -webkit-text-stroke: 0.4px black; /* width and color */
+}
+
+
+#arrowright {
+  background-color: rgb(255, 255, 255);
+  border-style: none;
+  font-size: 50pt;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+  font-weight: lighter;
+  text-align: center;
+  height: 80pt;
+  width: 180pt;
+  padding-bottom: 3rem;
+  left: -0.5%;
+  position: fixed;
+  margin-top: 38.5%;
+  z-index: 1;
+}
+
+#arrowleft {
+  background-color: rgb(255, 255, 255);
+  border-style: none;
+  font-size: 50pt;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+  font-weight: lighter;
+  text-align: center;
+  height: 80pt;
+  width: 180pt;
+  padding-bottom: 3rem;
+  right: -0.5%;
+  position: fixed;
+  margin-top: 38.5%;
+  z-index: 1;
+}
+
+#Previous_page {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 30pt;
+  width: 30pt;
+  opacity: 0.8;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#Next_page {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  height: 30pt;
+  width: 30pt;
+  opacity: 0.8;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#Previous_page:hover {
+  opacity: 1;
+  border-style:double;
+  border-color: rgb(148, 202, 238); 
+  border-radius: 50%;
+  border-width: 3pt;
+
+}
+
+#Next_page:hover {
+  opacity: 1;
+  border-style:double;
+  border-color: rgb(148, 202, 238); 
+  border-radius: 50%;
+  border-width: 3pt;
+}
+
+.CountryIntroduction {
+  width: 80%; 
+  margin: 25%; 
+  margin-top: -6.7%;
+  max-width: 100%;
+}
+
+#CountryTrainType {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+  color: #5098d2;
+  font-size: 35pt;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px black; /* width and color */
+  width: 150%;
+  margin: -15%;
+  margin-top: 2%;
+}
+
+.CountryText {
+  margin: -15%;
+  margin-top: 12%;
+  max-width: 50%;
+  color: #3e6e8b;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15pt;
+  font-weight: lighter;
+  -webkit-text-stroke: 0.7px black; /* width and color */
+}
+
+.CountryTrain {
+  border-radius: 5%;
+  height: 200pt;
+  width: 200pt;
+}
+
+.CountryTrainPictures {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20%;
+  position: absolute;
+}
